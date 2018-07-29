@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const NavBarContainer = styled.div`
-    height: 20vh;
+    height: 15vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    color: white;
+
 `
 
 const LogoContainer = styled.div `
