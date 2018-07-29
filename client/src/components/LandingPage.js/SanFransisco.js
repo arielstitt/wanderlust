@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
+
+const SanFransiscoContainer = styled.div`
+    width: 100vw;
+    height: 25vh;
+    background-color: yellow;
+`
 
 class SanFransisco extends Component {
     render() {
         return (
-            <div>
+            <SanFransiscoContainer>
                 San Fransisco
-            </div>
+            </SanFransiscoContainer>
         );
     }
 }
