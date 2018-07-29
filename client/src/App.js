@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import axios from 'axios'
+import NavBar from './components/LandingPage.js/NavBar';
+import styled from 'styled-components';
 
+const LadingPageContainer = styled.div `
+  height: 100vh;
+  width: 100vw;
+  background-color: yellow;
+  background-image: url('https://images.unsplash.com/photo-1523065144972-e5f5c9ea6ed9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4f0025299a23f1423e55bd6036a1e03&auto=format&fit=crop&w=1050&q=80')
+`
 
 class App extends Component {
 
@@ -20,7 +28,6 @@ class App extends Component {
       console.log(response.data);
       this.setState({
         cities: response.data.cities,
-        cityname: response.data.cityname
       });
     } catch (err) {
       console.log(err);
@@ -30,7 +37,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <LadingPageContainer>
+
+          <NavBar/>
+
           <Switch>
 
             <Route></Route>
@@ -38,7 +48,7 @@ class App extends Component {
             <Route></Route>
 
           </Switch>
-        </div>
+        </LadingPageContainer>
       </Router>
     );
   }
