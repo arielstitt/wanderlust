@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Scrollspy from 'react-scrollspy'
+
 
 const NavBarContainer = styled.div`
     height: 15vh;
@@ -10,7 +12,7 @@ const NavBarContainer = styled.div`
 
 `
 
-const LogoContainer = styled.div `
+const LogoContainer = styled.div`
 `
 
 const CityContainer = styled.div`
@@ -29,16 +31,18 @@ class NavBar extends Component {
     render() {
         return (
             <NavBarContainer>
-                    <LogoContainer>
-                        <div>Logo</div>
-                    </LogoContainer>
+                <LogoContainer>
+                    <div>Logo</div>
+                </LogoContainer>
 
-                    <CityContainer>
-                        <div>Atlanta</div>
-                        <div>London</div>
-                        <div>San Fransisco</div>
-                        <div>New York</div>
-                    </CityContainer>
+                <CityContainer>
+                    <div><li><a href="#section-1">section 1</a></li></div>
+                    <div><li><a href="#section-1">section 1</a></li></div>
+                    <div><li><a href="#section-1">section 1</a></li></div>
+                    <div><li><a href="#section-1">section 1</a></li></div>
+
+                </CityContainer>
+
             </NavBarContainer>
         );
     }

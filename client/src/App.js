@@ -9,8 +9,9 @@ import Atlanta from './components/LandingPage.js/Atlanta'
 import SanFransisco from './components/LandingPage.js/SanFransisco';
 import NewYork from './components/LandingPage.js/NewYork';
 import SplashImage from './components/LandingPage.js/SplashImage';
+import Scrollspy from 'react-scrollspy'
 
-const LadingPageContainer = styled.div `
+const LadingPageContainer = styled.div`
   height: 100vh;
   width: 100vw;
 `
@@ -18,7 +19,7 @@ const LadingPageContainer = styled.div `
 class App extends Component {
 
   state = {
-    cities: []
+    cities: [],
   }
 
   componentDidMount() {
@@ -42,14 +43,16 @@ class App extends Component {
       <Router>
         <LadingPageContainer>
 
+
+
           {/* splash image */}
-          <SplashImage/>
-          
+            <SplashImage />
+
           {/* Cities */}
           <Atlanta />
-          <SanFransisco/>
-          <NewYork/>
-          <London/>
+          <SanFransisco />
+          <NewYork />
+          <London />
 
           <Switch>
             <Route></Route>

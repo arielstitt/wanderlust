@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const LondonContainer = styled.div`
     width: 100vw;
-    height: 25vh;
+    height: 50vh;
     background-color: blue;
 `
 

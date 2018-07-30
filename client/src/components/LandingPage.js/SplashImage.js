@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import NavBar from '../LandingPage.js/NavBar'
+import Scrollspy from 'react-scrollspy'
+
 
 
 
@@ -22,7 +24,7 @@ align-items: center;
 height: 50vh;
 width: 80vw;
 justify-content: center;
-background-color: pink;
+color: white;
 flex-direction: column;
 `
 const FlexWrapper = styled.div`
@@ -36,7 +38,11 @@ class SplashImage extends Component {
     render() {
         return (
             <LadingPageContainer>
-                <NavBar />
+                <Scrollspy items={['atlanta', 'sandFransisco', 'newyork', 'london']} currentClassName='iscurrent'>
+                    <NavBar />
+                </Scrollspy>
+
+
                 <FlexWrapper>
                     <LandingPageBlip>
                         <div>
