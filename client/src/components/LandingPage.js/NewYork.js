@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 const NewYorkContainer = styled.div`
     width: 100vw;
-    height: 50vh;
+    height: 75vh;
     background-color: green;
 `
 
 class Seatle extends Component {
     render() {
         return (
-            <NewYorkContainer>
+            <NewYorkContainer id='new-york'>
                 New York
             </NewYorkContainer>
         );

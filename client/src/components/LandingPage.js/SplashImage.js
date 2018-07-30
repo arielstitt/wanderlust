@@ -38,10 +38,8 @@ class SplashImage extends Component {
     render() {
         return (
             <LadingPageContainer>
-                <Scrollspy items={['atlanta', 'sandFransisco', 'newyork', 'london']} currentClassName='iscurrent'>
+                
                     <NavBar />
-                </Scrollspy>
-
 
                 <FlexWrapper>
                     <LandingPageBlip>

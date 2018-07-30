@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 const LondonContainer = styled.div`
     width: 100vw;
-    height: 50vh;
+    height: 75vh;
     background-color: blue;
 `
 
 class London extends Component {
     render() {
         return (
-            <LondonContainer>
+            <LondonContainer id='london'>
                 London
             </LondonContainer>
         );

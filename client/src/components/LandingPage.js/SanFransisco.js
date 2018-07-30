@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 const SanFransiscoContainer = styled.div`
     width: 100vw;
-    height: 50vh;
+    height: 75vh;
     background-color: yellow;
 `
 
 class SanFransisco extends Component {
     render() {
         return (
-            <SanFransiscoContainer>
+            <SanFransiscoContainer id='san-fransisco'>
                 San Fransisco
             </SanFransiscoContainer>
         );

@@ -34,14 +34,15 @@ class NavBar extends Component {
                 <LogoContainer>
                     <div>Logo</div>
                 </LogoContainer>
-
-                <CityContainer>
-                    <div><li><a href="#section-1">section 1</a></li></div>
-                    <div><li><a href="#section-1">section 1</a></li></div>
-                    <div><li><a href="#section-1">section 1</a></li></div>
-                    <div><li><a href="#section-1">section 1</a></li></div>
-
-                </CityContainer>
+                
+                <Scrollspy items={['atlanta', 'san-fransisco', 'new-york', 'london']} currentClassName="is-current">
+                    <CityContainer>
+                        <div><li><a href="#atlanta">Atlanta</a></li></div>
+                        <div><li><a href="#san-fransisco">San Fransisco</a></li></div>
+                        <div><li><a href="#new-york">New York</a></li></div>
+                        <div><li><a href="#london">London</a></li></div>
+                    </CityContainer>
+                </Scrollspy>
 
             </NavBarContainer>
         );
