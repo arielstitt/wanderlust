@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import axios from 'axios'
-import NavBar from './components/LandingPage.js/NavBar';
 import styled from 'styled-components';
-import London from './components/LandingPage.js/London';
-import Atlanta from './components/LandingPage.js/Atlanta'
-import SanFransisco from './components/LandingPage.js/SanFransisco';
-import NewYork from './components/LandingPage.js/NewYork';
 import SplashImage from './components/LandingPage.js/SplashImage';
 import Scrollspy from 'react-scrollspy'
+import SingleCity from './components/LandingPage.js/SingleCity';
+import CitiesLandingPage from './components/LandingPage.js/CitiesLandingPage';
+
 
 const LadingPageContainer = styled.div`
   height: 100vh;
@@ -38,26 +36,28 @@ class App extends Component {
       this.setState({ err: err.message });
     }
   };
+
+
   render() {
+
+    
+
     return (
       <Router>
         <LadingPageContainer>
 
-
-
           {/* splash image */}
             <SplashImage />
-
-          {/* Cities */}
-          <Atlanta/>
-          <SanFransisco />
-          <NewYork />
-          <London />
+            
+            <CitiesLandingPage
+              {...this.props}
+              cities = {this.state.cities}
+            />
+          {/* Cities: refactor and create A SINGLE wrapper for the cities */}
+          
 
           <Switch>
-            <Route></Route>
-            <Route></Route>
-            <Route></Route>
+            {/* <Route exact path="/cities/:id" component={SingleCity} /> */}
 
           </Switch>
         </LadingPageContainer>
