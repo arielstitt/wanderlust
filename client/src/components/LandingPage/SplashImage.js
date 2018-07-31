@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import NavBar from '../LandingPage.js/NavBar'
+import NavBar from '../LandingPage/NavBar'
 import Scrollspy from 'react-scrollspy'
 
 

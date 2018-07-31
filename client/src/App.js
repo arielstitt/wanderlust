@@ -3,8 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import axios from 'axios'
 import styled from 'styled-components';
-import SplashImage from './components/LandingPage.js/SplashImage';
-import CitiesLandingPage from './components/LandingPage.js/CitiesLandingPage';
+import CitiesLandingPage from './components/LandingPage/CitiesLandingPage';
 import AtlantaShowPage from './components/CityShowPage/AtlantaShowPage'
 
 
@@ -40,13 +39,8 @@ class App extends Component {
 
   render() {
 
-    
-
     return (
       <Router>
-
-=
-
           <Switch>
             <Route exact path="/" component={CitiesLandingPage} />
             <Route exact path="/cities/atlanta" component={AtlantaShowPage} />

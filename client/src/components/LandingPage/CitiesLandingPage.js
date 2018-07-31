@@ -23,13 +23,8 @@ class CitiesLandingPage extends Component {
         return (
             <LadingPageContainer>
 
-          {/* splash image */}
             <SplashImage />
 
-            <CitiesLandingPage
-              
-            />
-          {/* Cities: refactor and create A SINGLE wrapper for the cities */}
 
         </LadingPageContainer>
         );
