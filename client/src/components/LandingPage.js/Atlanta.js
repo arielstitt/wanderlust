@@ -19,7 +19,9 @@ class Atlanta extends Component {
     render() {
         return (
             <AtlantaContainer id='atlanta'>
-                <div><h1><Link to={`/cities/${this.props.cities}`}>Atlanta</Link></h1></div>
+                <div><h1>
+                    <Link to="/cities/atlanta">Atlanta</Link>
+                </h1></div>
             </AtlantaContainer>
 
         );

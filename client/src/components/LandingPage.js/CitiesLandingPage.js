@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom'
-import Atlanta from './Atlanta';
-import SanFransisco from './SanFransisco';
-import London from './London'
-import NewYork from './NewYork'
+import SplashImage from './SplashImage'
+
+
+
 
 const CityContainer = styled.div`
     width: 100vw;
@@ -13,23 +12,26 @@ const CityContainer = styled.div`
     justify-content: center;
     align-items: center;
 `
+const LadingPageContainer = styled.div`
+  height: 100vh;
+  width: 100vw;
+`
 
 class CitiesLandingPage extends Component {
+
     render() {
         return (
-            <div>
-                {/* refactor these compoenents into a single style  */}
-                {this.props.cities.map(city =>{
-                    return (
-                    <div></div>
-                    )
-                })}
-                <Atlanta/>
-                <SanFransisco/>
-                <London/>
-                <NewYork/>
-                
-            </div>
+            <LadingPageContainer>
+
+          {/* splash image */}
+            <SplashImage />
+
+            <CitiesLandingPage
+              
+            />
+          {/* Cities: refactor and create A SINGLE wrapper for the cities */}
+
+        </LadingPageContainer>
         );
     }
 }

@@ -4,9 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import axios from 'axios'
 import styled from 'styled-components';
 import SplashImage from './components/LandingPage.js/SplashImage';
-import Scrollspy from 'react-scrollspy'
-import SingleCity from './components/LandingPage.js/SingleCity';
 import CitiesLandingPage from './components/LandingPage.js/CitiesLandingPage';
+import AtlantaShowPage from './components/CityShowPage/AtlantaShowPage'
 
 
 const LadingPageContainer = styled.div`
@@ -38,33 +37,21 @@ class App extends Component {
   };
 
 
+
   render() {
 
     
 
     return (
       <Router>
-        <LadingPageContainer>
 
-          {/* splash image */}
-            <SplashImage />
-
-            <CitiesLandingPage
-              {...this.props}
-              cities = {this.state.cities}
-            />
-          {/* Cities: refactor and create A SINGLE wrapper for the cities */}
-          
+=
 
           <Switch>
+            <Route exact path="/" component={CitiesLandingPage} />
             <Route exact path="/cities/atlanta" component={AtlantaShowPage} />
-            <Route exact path="/cities/sanFransisco" component={AtlantaShowPage} />
-            <Route exact path="/cities/london" component={AtlantaShowPage} />
-            <Route exact path="/cities/NewYork" component={AtlantaShowPage} />
-
-
+            
           </Switch>
-        </LadingPageContainer>
       </Router>
     );
   }
