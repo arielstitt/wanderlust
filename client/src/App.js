@@ -48,7 +48,7 @@ class App extends Component {
 
           {/* splash image */}
             <SplashImage />
-            
+
             <CitiesLandingPage
               {...this.props}
               cities = {this.state.cities}
@@ -57,7 +57,11 @@ class App extends Component {
           
 
           <Switch>
-            {/* <Route exact path="/cities/:id" component={SingleCity} /> */}
+            <Route exact path="/cities/atlanta" component={AtlantaShowPage} />
+            <Route exact path="/cities/sanFransisco" component={AtlantaShowPage} />
+            <Route exact path="/cities/london" component={AtlantaShowPage} />
+            <Route exact path="/cities/NewYork" component={AtlantaShowPage} />
+
 
           </Switch>
         </LadingPageContainer>
