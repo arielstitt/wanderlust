@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class SingleCity extends Component {
+class LondonShowPage extends Component {
     render() {
         return (
             <div>
-                <h1>Single City View</h1>
+                This is LONDON
             </div>
         );
     }
 }
 
-export default SingleCity;
+export default LondonShowPage;

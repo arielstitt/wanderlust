@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import SplashImage from './SplashImage'
+import Atlanta from './Atlanta'
+import London from './London'
+import Sanfransisco from './SanFransisco'
+import NewYork from './NewYork'
+import Divider from '../StyledComponents/Divider';
+import Footer from '../StyledComponents/Footer'
 
 
 
@@ -22,9 +28,16 @@ class CitiesLandingPage extends Component {
     render() {
         return (
             <LadingPageContainer>
-
             <SplashImage />
-
+            <Divider/>
+            <Atlanta/>
+            <Divider/>
+            <London/>
+            <Divider/>
+            <Sanfransisco/>
+            <Divider/>
+            <NewYork/>
+            <Footer/>
 
         </LadingPageContainer>
         );

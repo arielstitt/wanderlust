@@ -5,18 +5,22 @@ import { Link } from 'react-router-dom'
 
 const NewYorkContainer = styled.div`
     width: 100vw;
-    height: 75vh;
+    height: 55vh;
     background-image: url(https://images.unsplash.com/photo-1519121785383-3229633bb75b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c454615ee9dd1e126ead3cbf59349e86&auto=format&fit=crop&w=700&q=80);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 `
 
 class Seatle extends Component {
     render() {
         return (
             <NewYorkContainer id='new-york'>
-                <div><h1><Link to='newYork'>New York</Link></h1></div>
+                <div><h1><Link to='/cities/new-york'>New York</Link></h1></div>
             </NewYorkContainer>
         );
     }

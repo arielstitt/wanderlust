@@ -9,7 +9,6 @@ const NavBarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     color: white;
-
 `
 
 const LogoContainer = styled.div`
@@ -35,14 +34,15 @@ class NavBar extends Component {
                     <div>Logo</div>
                 </LogoContainer>
                 
-                <Scrollspy items={['atlanta', 'san-fransisco', 'new-york', 'london']} currentClassName="is-current">
                     <CityContainer>
+                <Scrollspy items={['atlanta', 'san-fransisco', 'new-york', 'london']} currentClassName="is-current">
                         <div><li><a href="#atlanta">Atlanta</a></li></div>
                         <div><li><a href="#san-fransisco">San Fransisco</a></li></div>
                         <div><li><a href="#new-york">New York</a></li></div>
                         <div><li><a href="#london">London</a></li></div>
-                    </CityContainer>
                 </Scrollspy>
+
+                    </CityContainer>
 
             </NavBarContainer>
         );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import NavBar from '../LandingPage/NavBar'
 import Scrollspy from 'react-scrollspy'
+import Divider from '../StyledComponents/Divider';
 
 
 
@@ -37,6 +38,7 @@ const FlexWrapper = styled.div`
 class SplashImage extends Component {
     render() {
         return (
+            
             <LadingPageContainer>
                 
                     <NavBar />

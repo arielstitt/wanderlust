@@ -5,6 +5,9 @@ import axios from 'axios'
 import styled from 'styled-components';
 import CitiesLandingPage from './components/LandingPage/CitiesLandingPage';
 import AtlantaShowPage from './components/CityShowPage/AtlantaShowPage'
+import LondonShowPage from './components/CityShowPage/LondonShowPage';
+import SanFransiscoShowPage from './components/CityShowPage/SanFransiscoShowPage';
+import NewYorkShowPage from './components/CityShowPage/NewYorkShowPage';
 
 
 const LadingPageContainer = styled.div`
@@ -44,6 +47,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={CitiesLandingPage} />
             <Route exact path="/cities/atlanta" component={AtlantaShowPage} />
+            <Route exact path="/cities/london" component={LondonShowPage} />
+            <Route exact path="/cities/san-fransisco" component={SanFransiscoShowPage} />
+            <Route exaxt path ="/cities/new-york" component={NewYorkShowPage}/>
             
           </Switch>
       </Router>
