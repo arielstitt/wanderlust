@@ -4,11 +4,22 @@ import Axios from 'axios';
 class AtlantaShowPage extends Component {
 
     state = {
-        atlanta: {},
+        atlanta: [{}],
         posts: []
       }
 
-    
+    componentWillMount(){
+        this.getSingleCity()
+    }
+
+    getSingleCity = async () => {
+        // const cityId = this.state.index[0]
+        const res = await Axios.get(`/api/ciites/`)
+        this.setState({
+            city: res.data
+        
+        })
+    }
 
     render() {
         return (

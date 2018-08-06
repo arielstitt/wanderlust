@@ -40,18 +40,23 @@ class App extends Component {
 
 
 
+
   render() {
+
+    const CityList = (props) => (
+      <CitiesLandingPage cities={this.state.cities} {...props}/>
+    )
 
     return (
       <Router>
-          <Switch>
-            <Route exact path="/" component={CitiesLandingPage} />
-            <Route exact path="/cities/atlanta" component={AtlantaShowPage} />
-            <Route exact path="/cities/london" component={LondonShowPage} />
-            <Route exact path="/cities/san-fransisco" component={SanFransiscoShowPage} />
-            <Route exaxt path ="/cities/new-york" component={NewYorkShowPage}/>
-            
-          </Switch>
+        <Switch>
+          <Route exact path="/" component={CityList} />
+          <Route exact path="/cities/atlanta" component={AtlantaShowPage} />
+          <Route exact path="/cities/london" component={LondonShowPage} />
+          <Route exact path="/cities/san-fransisco" component={SanFransiscoShowPage} />
+          <Route exaxt path="/cities/new-york" component={NewYorkShowPage} />
+
+        </Switch>
       </Router>
     );
   }

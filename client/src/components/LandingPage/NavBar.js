@@ -33,16 +33,16 @@ class NavBar extends Component {
                 <LogoContainer>
                     <div>Logo</div>
                 </LogoContainer>
-                
-                    <CityContainer>
-                <Scrollspy items={['atlanta', 'san-fransisco', 'new-york', 'london']} currentClassName="is-current">
+
+                <CityContainer>
+                    <Scrollspy items={['atlanta', 'san-fransisco', 'new-york', 'london']} currentClassName="is-current">
                         <div><li><a href="#atlanta">Atlanta</a></li></div>
                         <div><li><a href="#san-fransisco">San Fransisco</a></li></div>
                         <div><li><a href="#new-york">New York</a></li></div>
                         <div><li><a href="#london">London</a></li></div>
-                </Scrollspy>
+                    </Scrollspy>
 
-                    </CityContainer>
+                </CityContainer>
 
             </NavBarContainer>
         );
