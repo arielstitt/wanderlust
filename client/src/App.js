@@ -9,6 +9,7 @@ import LondonShowPage from './components/CityShowPage/LondonShowPage';
 import SanFransiscoShowPage from './components/CityShowPage/SanFransiscoShowPage';
 import NewYorkShowPage from './components/CityShowPage/NewYorkShowPage';
 
+import SingleCityView from './components/CityShowPage/SingleCityView'
 
 const LadingPageContainer = styled.div`
   height: 100vh;
@@ -43,19 +44,23 @@ class App extends Component {
 
   render() {
 
-    const CityList = (props) => (
-      <CitiesLandingPage cities={this.state.cities} {...props}/>
+    const CityList = () => (
+      <CitiesLandingPage cities={this.state.cities} />
+    )
+
+    const SingleCity = (props) => (
+      <SingleCityView cities = {this.state.cities} {...props}/>
     )
 
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={CityList} />
-          <Route exact path="/cities/atlanta" component={AtlantaShowPage} />
+          <Route exact path="/cities" render={CityList} />
+          {/* <Route exact path="/cities/atlanta" component={AtlantaShowPage} />
           <Route exact path="/cities/london" component={LondonShowPage} />
           <Route exact path="/cities/san-fransisco" component={SanFransiscoShowPage} />
-          <Route exaxt path="/cities/new-york" component={NewYorkShowPage} />
-
+          <Route exaxt path="/cities/new-york" component={NewYorkShowPage} /> */}
+          <Route exact path="/cities/:id" render={SingleCity}/>>
         </Switch>
       </Router>
     );
