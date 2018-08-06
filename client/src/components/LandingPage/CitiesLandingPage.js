@@ -27,21 +27,10 @@ class CitiesLandingPage extends Component {
 
     render() {
         return (
-            // {props.cities.map(city => (
-            //     <div key={city.id}>
-            //         <CityPhoto>
-            //             <a href={`/cities/${city.id}`}><img src={city.image} alt={city.name + "City Photo"} /> </a>
-            //             <ATag>
-            //                 <a href={`/cities/${city.id}`}> {city.name} </a>
-            //             </ATag>
-            //         </CityPhoto>
+
         
             <LadingPageContainer>
-                {this.props.cities.map(city => {
-                    <div key={city}>
-                        {city.name}
-                    </div>
-                })}
+
             <SplashImage />
             <Divider/>
             <Atlanta/>

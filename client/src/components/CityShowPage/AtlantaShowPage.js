@@ -13,7 +13,6 @@ class AtlantaShowPage extends Component {
     }
 
     getSingleCity = async () => {
-        // const cityId = this.state.index[0]
         const res = await Axios.get(`/api/ciites/`)
         this.setState({
             city: res.data
