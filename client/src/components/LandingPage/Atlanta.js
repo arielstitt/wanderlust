@@ -24,7 +24,7 @@ class Atlanta extends Component {
         return (
             <AtlantaContainer id='atlanta'>
                 <div><h1>
-                    <Link to="/cities/atlanta"><h1>Atlanta</h1></Link>
+                    <Link to="/cities/:id"><h1>Atlanta</h1></Link>
                 </h1></div>
             </AtlantaContainer>
 

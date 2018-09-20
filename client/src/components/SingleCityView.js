@@ -7,8 +7,7 @@ class SingleCityView extends Component {
 
 
     state = {
-        city: {},
-        posts: []
+        city: {}
     }
     
     componentDidMount () {
@@ -17,28 +16,19 @@ class SingleCityView extends Component {
 
     getSingleCity = async() => {
         const cityId = this.props.match.params.id
-        const res = await Axios.get(`/api/issues/${cityId}`)
+        const res = await Axios.get(`/api/cities/${cityId}`)
         this.setState({
-            city: res.data
+            city: res.data.city
         })
     
     }
-
-    // getSingleIssue = async () => {
-    //     const issueId = this.props.match.params.id
-    //     const res = await axios.get(`/api/issues/${issueId}`)
-    //     this.setState({
-    //         issue: res.data
-    //     })
-    //     // console.log("hello?")
-    //     console.log(this.state);
-    // }
 
 
     render() {
         return (
             <div>
                 <h1>This is the single city view</h1>
+              <img src={this.state.city.image} alt='dis shit right here'/>
             </div>
         );
     }

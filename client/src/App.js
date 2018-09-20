@@ -4,10 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import axios from 'axios'
 import styled from 'styled-components';
 import CitiesLandingPage from './components/LandingPage/CitiesLandingPage';
-import AtlantaShowPage from './components/CityShowPage/AtlantaShowPage'
-import LondonShowPage from './components/CityShowPage/LondonShowPage';
-import SanFransiscoShowPage from './components/CityShowPage/SanFransiscoShowPage';
-import NewYorkShowPage from './components/CityShowPage/NewYorkShowPage';
+import SingleCityView from './components/SingleCityView'
 
 
 const LadingPageContainer = styled.div`
@@ -46,18 +43,16 @@ class App extends Component {
     const CityList = (props) => (
       <CitiesLandingPage cities={this.state.cities} {...props}/>
     )
-    const Atlanta = (props) => (
-      <AtlantaShowPage city={this.state.cities} {...props}/>
+    
+    const CityShowPage = (props) => (
+      <SingleCityView {...props}/>
     )
-
+    
     return (
       <Router>
         <Switch>
           <Route exact path="/" component={CityList} />
-          <Route exact path="/cities/atlanta" render={Atlanta} />
-          <Route exact path="/cities/london" component={LondonShowPage} />
-          <Route exact path="/cities/san-fransisco" component={SanFransiscoShowPage} />
-          <Route exaxt path="/cities/new-york" component={NewYorkShowPage} />
+          <Route exact path="/cities/:id" render={CityShowPage}/>
 
         </Switch>
       </Router>
