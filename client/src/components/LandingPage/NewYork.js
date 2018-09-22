@@ -20,7 +20,7 @@ class Seatle extends Component {
     render() {
         return (
             <NewYorkContainer id='new-york'>
-                <div><h1><Link to='/cities/new-york'>New York</Link></h1></div>
+                <div><h1><Link to='/cities/32'>New York</Link></h1></div>
             </NewYorkContainer>
         );
     }

@@ -40,6 +40,7 @@ class CitiesLandingPage extends Component {
             <Sanfransisco/>
             <Divider/>
             <NewYork/>
+            <Divider/>
             <Footer/>
 
         </LadingPageContainer>

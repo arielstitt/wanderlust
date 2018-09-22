@@ -20,7 +20,7 @@ class SanFransisco extends Component {
     render() {
         return (
             <SanFransiscoContainer id='san-fransisco'>
-                <div><h1><Link to='/cities/san-fransisco'>San Fransisco</Link></h1></div>
+                <div><h1><Link to='/cities/31'>San Fransisco</Link></h1></div>
             </SanFransiscoContainer>
         );
     }

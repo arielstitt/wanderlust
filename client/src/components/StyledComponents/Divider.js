@@ -5,9 +5,9 @@ import styled from 'styled-components';
 const CityDivider = styled.div`
     width: 100vw;
     height: 25vh;
-    background-color: aliceblue;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
-`
+    background-color: #b9d2de;
+    box-shadow: inset -6px -1px 10px #888888;
+    `
 
 class Divider extends Component {
     render() {

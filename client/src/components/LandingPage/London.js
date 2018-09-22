@@ -21,7 +21,7 @@ class London extends Component {
     render() {
         return (
             <LondonContainer id='london'>
-                <div><h1><Link to='/cities/london'><h1>London</h1></Link></h1></div> 
+                <div><h1><Link to='/cities/30'><h1>London</h1></Link></h1></div> 
             </LondonContainer>
         );
     }

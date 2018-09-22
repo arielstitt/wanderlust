@@ -7,6 +7,8 @@ Things you may want to cover:
 
 * Ruby version
 
+2.5.1
+
 * System dependencies
 
 * Configuration
@@ -22,3 +24,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Future Plans
+
+ There are a lot of unnecessary components and styling that can be combined into one. I want to refactor the code so that it's cleaner.
